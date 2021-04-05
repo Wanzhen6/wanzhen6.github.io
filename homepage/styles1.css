@@ -1,0 +1,18 @@
+body{background-image: url('2.png');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;}
+
+button{background-color: white;
+        border: black;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;}
+
+essay{text-align: center;}
+button {position: absolute;
+        top: 80%;
+        left:45%;}
