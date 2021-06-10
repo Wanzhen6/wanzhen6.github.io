@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+<title>COVID-19 Cases Comparison(s)</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!--<link href="<link rel="preconnect" href="https://fonts.gstatic.com">-->
+        <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <p>Click "Help" if needed!.</p>
+
+        <button onclick="myFunction()">Help</button>
+
+        <script>
+        function myFunction() {
+        alert("Be sure to type the state(s) in case sensitve. Uppercase and typing the states correctly are important to make this graph work. If you type the state(s) wrong, nothing will appear. Below the graph you will find a helpful table displaying the current Confirmed Cases in the entered state(s) If you have any trouble please contact us at:");
+        }
+        </script>
+
+        <style>
+           h1 {
+               text-align: center;
+               font-family: 'Lobster', sans-serif;
+           }
+           .container {
+               width: 70%;
+               margin: auto;
+           }
+           #mytable{
+               text-align:center;
+           }
+           table{
+               width:500px;
+               /*margin:auto;*/
+           }
+        </style>
+
+        <!--Use p5 to load csv file-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+
+    	<!-- Load plotly.js into the DOM -->
+    	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    </head>
+
+    <body>
+        <h1 id="title">Covid-19 Cases State Comparison</h1>
+        <div class="container">
+            <input type="text" id="state1" placeholder="Enter a State">
+            <input type="text" id="state2" placeholder="Enter another State">
+            <input type="text" id="state3" placeholder="(Optional) Enter another State">
+            <input type="text" id="state4" placeholder="(Optional) Enter another State">
+
+
+            <button id="create" onclick="create()">Create Graph</button>
+
+    	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    	<div id='mytable'></div>
+    	</div>
+    	<script src="graph.js"></script>
+    </body>
+</html>
+
